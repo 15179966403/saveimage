@@ -7,6 +7,5 @@
         android:id="@+id/filebrowser" android:layout_width="match_parent"
         android:layout_height="match_parent" mobile:folderImage="@drawable/image1"
         mobile:extName1="jpg" mobile:fileImage1="@drawable/image2"
-
         mobile:otherFileImage="@drawable/image3" />
 </LinearLayout>
