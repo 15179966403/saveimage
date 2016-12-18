@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobile="http://com.hrc.widget"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hrc.administrator.test.savebrowseimage.filebrowse.FileBrowser
+        android:id="@+id/filebrowser" android:layout_width="match_parent"
+        android:layout_height="match_parent" mobile:folderImage="@drawable/image1"
+        mobile:extName1="jpg" mobile:fileImage1="@drawable/image2"
+
+        mobile:otherFileImage="@drawable/image3" />
+</LinearLayout>
