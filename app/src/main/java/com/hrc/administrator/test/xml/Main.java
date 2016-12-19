@@ -3,6 +3,7 @@ package com.hrc.administrator.test.xml;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Xml;
 
 import com.hrc.administrator.test.R;
@@ -33,9 +34,10 @@ public class Main extends Activity implements OnFileBrowserListener{
     @Override
     public void onFileItemClick(String filename) {
         try{
-            if(!filename.endsWith(".xml")){
+            if(!filename.toLowerCase().endsWith(".xml")){
                 return;
             }
+            Log.d("onFileItemClick","点击的文件路径："+filename);
             FileInputStream fis=new FileInputStream(filename);
             XML2Product xml2Product=new XML2Product();
             android.util.Xml.parse(fis, Xml.Encoding.UTF_8,xml2Product);

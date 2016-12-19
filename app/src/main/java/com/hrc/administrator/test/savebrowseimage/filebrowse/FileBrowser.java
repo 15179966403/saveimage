@@ -177,16 +177,13 @@ public class FileBrowser extends ListView implements AdapterView.OnItemClickList
                     ivFile.setImageResource(folderImageResId);
                 }
                 tvFile.setText(". .");
-                Log.d("tvFile","第一个if设置的文字:"+tvFile.getText().toString());
             }else if(fileList.get(position).isDirectory()){
                 if(folderImageResId>0){
                     ivFile.setImageResource(folderImageResId);
                 }
                 tvFile.setText(fileList.get(position).getName());
-                Log.d("tvFile","第二个if设置的文字:"+tvFile.getText().toString());
             }else{
                 tvFile.setText(fileList.get(position).getName());
-                Log.d("tvFile","最后设置的文字:"+tvFile.getText().toString());
                 Integer resId=fileImageResIdMap.get(getExtName(fileList.get(position).getName()));
                 int fileImageResId=0;
                 if(resId!=null){
